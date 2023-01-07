@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main style="height: 100vh">
+      <div class="form-holder">
+        <h1>Create an Account</h1>
+        <form class="form">
+          <!-- NAme and Surname -->
+
+          <div class="form-group">
+            <div class="form-group-input">
+              <label for="firstname">First Name</label>
+              <input id="firstname" type="text" />
+            </div>
+            <div class="form-group-input">
+              <label for="lastname">Last Name</label>
+              <input id="lastname" type="text" />
+            </div>
+          </div>
+
+          <!-- EMail -->
+
+          <div class="form-group">
+            <div class="form-group-input">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" />
+              <span class="form-tooltip"
+                >We'll never share your email with anyone else.</span
+              >
+            </div>
+          </div>
+
+          <!-- radionButton Male/Female-->
+          <div class="form-group-sex">
+            <div class="form-group-radio-sex">
+              <input class="sex-male" type="radio" id="male" name="sex" />
+              <label class="sex-male-label" for="male">Male</label>
+            </div>
+            <div class="form-group-radio-sex">
+              <input class="sex-female" type="radio" id="female" name="sex" />
+              <label class="sex-female-label" for="female">Female</label>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="form-group">
+            <div class="form-group-select">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option>Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="france">France</option>
+                <option value="poland">Poland</option>
+              </select>
+            </div>
+            <div class="form-group-input">
+              <label for="city">City</label>
+              <input id="city" type="text" />
+            </div>
+          </div>
+
+          <!-- Button type Submit -->
+
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>
+          By clicking the 'Sign Up' button, you confirm that you accept our
+          <a href="index.html">Terms of Use</a> and
+          <a href="index.html">Privacy Police</a>
+        </p>
+        <p>Have an account? <a href="index.html">Log In</a></p>
+      </div>
+    </main>
+  </body>
+</html>
